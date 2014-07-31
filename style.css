@@ -1,0 +1,328 @@
+/*
+Theme Name: Michak.pl
+Theme URI: http://michak.pl;
+Author: Michał Groele
+Author URI: http://michak.pl/
+Description: Official theme for Michak.pl.
+Version: 1.0
+*/
+
+@import url(css/bootstrap.min.css);
+@import url(css/core.css);
+
+html {
+	font-size: 1em;
+/*	text-shadow: 0 0 1px rgba(0,0,0,0.3); 
+*/}
+
+body {
+	font-size: 1em;
+	font-family: 'PT Serif', serif;
+	font-weight: 400;
+	color: #7b7b7b;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+div.upperHeader {
+	overflow: hidden;
+}
+
+nav.headNav div.navItem {
+	padding: 24px 11px 0;
+}
+
+nav.headNav div.navItem a {
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.25em;
+	color: #595959;
+	text-decoration: none;
+}
+
+nav.headNav div.navItem.active {
+	border-top: 9px solid #00aced;
+}
+
+nav.headNavSm button, nav.headNavSm ul {
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+nav.headNavSm button {
+	color: #fff;
+	background: #00aced;
+	border: 1px solid #00aced;
+}
+
+nav.headNavSm button span.caret {
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+}
+
+nav.headNavSm button:hover {
+	color: #00aced;
+	background: #fff;
+	border: none;
+	border: 1px solid #00aced;
+}
+
+nav.headNavSm button:hover span.caret {
+	border-top-color: #00aced;
+	border-bottom-color: #00aced;
+}
+
+nav.headNavSm ul li a {
+	color: #00aced;
+	text-decoration: none;
+}
+
+div.socialButtons div.socialItem {
+	margin-left: 7px;
+}
+
+div#header {
+	background: url("images/header_bg.png") repeat left top;
+	margin: 6px 0 44px;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	padding: 30px 0;
+}
+
+div#header h1 {
+	color: #00aced;
+	font-size: 4.5em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-shadow: 0.5px 0.5px 0px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1), 1.5px 1.5px 0px rgba(255, 255, 255, 1), 2px 2px 0px rgba(255, 255, 255, 1);
+}
+
+div#header p {
+	color: #fff;
+	background: #00aced;
+	display: block;
+	padding: 5px 0;
+	margin: 0 auto;
+	float: none;
+}
+
+.shadowed {
+	position: relative;
+}
+
+.shadowed::before {
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    content:'';
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: -2px;
+    -webkit-transform: skew(0, 45deg);
+    -moz-transform: skew(0, 45deg);
+    -o-transform: skew(0, 45deg);
+    -ms-transform: skew(0, 45deg);
+}
+.shadowed::after {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    content:'';
+    display: block;
+    position: absolute;
+    left: 1px;
+    bottom: -2px;
+    -webkit-transform: skew(45deg);
+    -moz-transform: skew(45deg);
+    -o-transform: skew(45deg);
+    -ms-transform: skew(45deg);
+}
+
+article.entry {
+	margin-bottom: 60px;
+}
+
+article.entry header h2 {
+	font-size: 2.8em;
+	color: #494949;	
+	padding: 0 8px;
+	display: inline-block;
+}
+
+article.entry header h2 a {
+	color: #494949;
+	display: inline-block;
+	text-decoration: none;
+}
+
+article.entry header p.data {
+	border-top: 1px solid #fbe3e3;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: .6875em;
+	color: #c9c9c9;
+	padding-top: 8px;
+}
+
+article.entry header p.data span a {
+	color: #00aced;
+}
+
+article.entry div.content img {
+    max-width: 98.5%;
+    height: auto;
+}
+
+article.entry div.content p {
+	padding: 0 8px;
+}
+
+article.entry div.content p {
+	text-align: justify;
+    			    			
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    line-height: 1.7em;
+    margin-bottom: 1.5em;
+}
+
+article footer {
+	overflow: hidden;
+	background: #00aced;
+	border-radius: 5px;
+	margin-top: 28px;
+	height: 35px;
+}
+
+article footer p a {
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	font-size: .875em;
+	padding: 8px 0 0 8px;
+	display: inline-block;
+}
+
+article footer p a:hover {
+	color: #fff;
+}
+
+article footer p.readMore {
+	background: url("images/readMore.png") no-repeat left top;
+	display: inline-block;
+	height: 35px;
+	padding-left: 20px;
+	padding-right: 0;
+}
+
+article footer p.readMore span {
+	background: #1584ae;
+	display: block;
+	overflow: hidden;
+	padding-right: 8px;
+	height: inherit;
+}
+
+ul.pager li>a {
+	border-radius: 5px;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	font-size: .875em;
+	border: none;
+}
+
+ul.pager li>a.previous {
+	background: #1584ae;
+}
+
+ul.pager li>a.next {
+	background: #00aced;
+}
+
+div.sidebar div.widget h3 {
+	font-size: 1.125em;
+	text-transform: uppercase;
+	border-bottom: 1px solid #fbe3e3;
+	padding-bottom: 9px;
+	margin-bottom: 12px;
+}
+
+div.sidebar div.widget nav.categories li a:before {
+	content: "\00BB \0020";
+}
+
+div.sidebar div.widget nav.categories li a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;	
+	color: #00aced;
+}
+
+div.sidebar div.widget div nav.categories li.current-cat a {
+	color: #fff;
+}
+
+div.sidebar div.widget div p {
+	font-size: .875em;
+	text-align: justify;
+    			    			
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+footer.footer {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;	
+	margin: 160px 0 50px;
+	border-top: 1px solid #fbe3e3;
+	padding-top: 10px;
+	font-size: .6875em;
+	color: #c9c9c9;
+}
+
+footer.footer p a {
+	color: #00aced;
+}
+
+.nav.nav-pills .current-cat a {
+	background: #00aced;
+}
+
+code {
+	white-space: normal;
+}
+
+@media (min-width: 970px)
+{
+	div.sidebar div.widget nav.categories li a {
+		font-size: .875em;
+		line-height: 1.1em;
+	}
+}
+
+@media (max-width: 768px)
+{
+	footer.footer p.pull-right {
+		float: left!important;
+		clear: left;
+	}
+}
